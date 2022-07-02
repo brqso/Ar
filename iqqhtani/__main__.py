@@ -7,13 +7,13 @@ from .core.logger import logging
 from .core.session import iqqhtani
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-"ميكاثون"
+"برق"
 )
 
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل ميكاثون"
+"بدء تنزيل برق"
 )
     iqqhtani.loop.run_until_complete(
 setup_bot())
@@ -32,7 +32,7 @@ async def startup_process():
     await load_plugins("assistant")
     await load_plugins("MusicTelethon")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت ميكاثون بنجاح  🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/MEGGAX "
+f"<b> ⌔︙ اهلا بك لقد نصبت برق بنجاح  🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/ektesa7 "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
